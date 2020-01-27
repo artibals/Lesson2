@@ -12,10 +12,25 @@
     </nav>
     <main>
       <h1>Form sample</h1>
-        <form>
-          <lable>Name:
-            <input type="text" placeholder="Name">
-          </lable>
+        <form action="https://formspree.io/xwkoeplw" method="POST">
+            <label>Name:
+                 <input type="text" placeholder="Name" name="name">
+            </label>
+            <label for="email">Email:</label>
+            <input type="email" placeholder="Email" id="email" name="email">
+            <br>
+            <label>Gender:</label>
+            <label>
+                 <input type="radio" name="gender" value="male">Male
+            </label> 
+            <label>
+                 <input type="radio" name="gender" value="female">Female
+            </label> 
+            <label>
+                 <input type="radio" name="gender" value="other">Other
+            </label>
+            <br>
+            <input type="submit">  
         </form>
     </main>
 </body>
